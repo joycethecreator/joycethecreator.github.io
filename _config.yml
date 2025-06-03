@@ -43,9 +43,9 @@ disqus-shortname: thedevslot
 # Name of the Author
 author-name: TheDevsLot
 # URL for the Image of the Author
-author-image: /WhatATheme/assets/images/profile.jpg
+author-image: /WhatATheme/assets/images/profile.png
 # 60 Words About the Author
-author-about: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eget pharetra velit, dapibus bibendum ex. Maecenas vitae laoreet mauris, ac luctus metus. Aliquam luctus velit vel ipsum feugiat, vel venenatis mauris hendrerit. Sed at vulputate sapien, eget vehicula dolor. Aliquam volutpat pulvinar neque sit amet sodales.
+author-about: Hi there, I'm Joyce — a graphic programmer with a love for elegant code, clever algorithms, and the art of turning ideas into interactive, visual experiences. Whether I’m building game systems, teaching Python, or optimizing geometry pipelines, I always bring curiosity, clarity, and care to the process. Welcome to my corner of the internet — where code meets creativity.
 # URL to the Author's Profile (i.e., Github, Twitter, Stackoverflow, etc)
 author-url: https://github.com/thedevslot
 
