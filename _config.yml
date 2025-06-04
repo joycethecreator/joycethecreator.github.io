@@ -1,5 +1,8 @@
 # WhatATheme
 markdown: kramdown
+kramdown:
+    input: GFM
+    hard_wrap: false
 
 # URL of the Site
 url: ''
