@@ -8,6 +8,7 @@ tags:
 - how to
 - setup
 - theme
+- template
 ---
 
 # What is WhatATheme?

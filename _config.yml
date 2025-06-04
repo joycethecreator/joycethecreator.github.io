@@ -60,6 +60,7 @@ sass:
 plugins:
   - jekyll-admin
   - jekyll-feed
+  - jekyll-archives
 
 # Permalink
 permalink: "blog/:title"
@@ -97,3 +98,12 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
+
+jekyll-archives:
+  enabled:
+    - tags
+  layouts:
+    tag: archive-tag
+  permalinks:
+    tag: /tag/:name/
+
