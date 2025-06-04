@@ -20,7 +20,10 @@ For more information about writing markdown you can checkout the following markd
 
 Here is an interactive demo of my GLSL shader:
 
+{% raw %}
 <iframe src="/shader/my-shader.html" width="100%" height="500px" frameborder="0" style="border:1px solid #ccc;"></iframe>
+
+{% endraw %}
 
 Some more explanation about how it works...
 
