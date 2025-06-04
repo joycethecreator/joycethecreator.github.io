@@ -1,5 +1,5 @@
 ---
-title: My Project
+title: Shader Shades
 layout: post
 post-image: "https://raw.githubusercontent.com/thedevslot/WhatATheme/master/assets/images/SamplePost.png?token=AHMQUEPC4IFADOF5VG4QVN26Z64GG"
 description: A sample post to show how the content will look and how will different
@@ -21,7 +21,7 @@ For more information about writing markdown you can checkout the following markd
 Here is an interactive demo of my GLSL shader:
 
 {% raw %}
-<iframe src="/shader/my-shader.html" width="100%" height="500px" frameborder="0" style="border:1px solid #ccc;"></iframe>
+<iframe src="/assets/my-shader.html" width="100%" height="500px" frameborder="0" style="border:1px solid #ccc;"></iframe>
 
 {% endraw %}
 
