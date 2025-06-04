@@ -18,11 +18,11 @@ For more information about writing markdown you can checkout the following markd
 
 ---
 
-{% raw %}
-<iframe src="{{ site.baseurl }}/shader/my_shader_.html"
-        style="width:100%; height:400px; border:none;"
-        title="Shader Demo"></iframe>
-{% endraw %}
+Here is an interactive demo of my GLSL shader:
+
+<iframe src="/shader/my-shader.html" width="100%" height="500px" frameborder="0" style="border:1px solid #ccc;"></iframe>
+
+Some more explanation about how it works...
 
 # This is the h1 text
 ## This is the h2 text
