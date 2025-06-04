@@ -18,6 +18,12 @@ For more information about writing markdown you can checkout the following markd
 
 ---
 
+{% raw %}
+<iframe src="{{ site.baseurl }}/shader/my_shader_.html"
+        style="width:100%; height:400px; border:none;"
+        title="Shader Demo"></iframe>
+{% endraw %}
+
 # This is the h1 text
 ## This is the h2 text
 ### This is the h3 text
