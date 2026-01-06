@@ -16,7 +16,7 @@ description: A creator's portfolio
 # URL of Image of the Site
 site-image: /WhatATheme/assets/images/meta.jpg
 # Keywords of the Site
-site-keywords: Site, Template, Theme
+site-keywords: 
 # URL for the Image of custom Favicon
 favicon-url: 
 
@@ -47,7 +47,7 @@ author-name: Joyce Zhou
 # URL for the Image of the Author
 author-image: /assets/images/profile.png
 # 60 Words About the Author
-author-about: Hi there, I'm Joyce. Welcome to my digital playground - where I turn ideas into interactive and visual experiences. I am a graphic programmer. I build game systems, teach graphic courses, or optimize geometry pipelines, all with passion, perpetual curiosity, and an eye for elegance and ingenuity in both code and aesthetics.
+author-about: Hi there, I'm Joyce. Welcome to my digital playground - where I turn ideas into interactive and visual experiences. I am a graphic programmer, film maker, teacher, and photographer, all with passion, perpetual curiosity, and an eye for elegance and ingenuity in both code and aesthetics.
 # URL to the Author's Profile (i.e., Github, Twitter, Stackoverflow, etc)
 author-url: https://github.com/thedevslot
 
