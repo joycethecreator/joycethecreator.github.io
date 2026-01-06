@@ -1,0 +1,46 @@
+---
+layout: compress
+---
+
+<!DOCTYPE html>
+<html>
+<head>
+    {% include head.html %}
+</head>
+
+<body>
+    {% include navbar.html %}
+
+    <section class="hero is-fullheight" id="project">
+        <div class="hero-body">
+            <div class="container has-text-centered">
+
+                <div class="section">
+                    <p class="subtitle is-uppercase has-text-weight-medium has-text-grey">
+                        {{ page.title }}
+                    </p>
+                </div>
+
+                {% assign all_items = site.data[page.data_source] %}
+                {% assign items = all_items | where: "category", page.category %}
+
+                {% if items == empty %}
+                <p class="has-text-grey">
+                    No projects found for {{ page.category }}.
+                </p>
+                {% else %}
+                <div class="columns is-centered is-multiline is-mobile">
+                    {% for project in items %}
+                    {% include project-card.html project=project %}
+                    {% endfor %}
+                </div>
+                {% endif %}
+
+            </div>
+        </div>
+    </section>
+
+    {% include footer.html %}
+</body>
+</html>
+

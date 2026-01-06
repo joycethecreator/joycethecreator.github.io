@@ -1,0 +1,75 @@
+---
+layout: compress
+---
+
+<!DOCTYPE html>
+<html>
+<head>
+    {% include head.html %}
+</head>
+
+<body>
+    {% include navbar.html %}
+
+    <!-- Main Section -->
+    <section class="hero is-fullheight" id="project">
+        <div class="hero-body">
+            <div class="container has-text-centered">
+
+                <div class="section">
+                    <p class="subtitle is-uppercase has-text-weight-medium has-text-grey">Multimedia Projects</p>
+                </div>
+
+                <div class="columns is-centered is-multiline is-mobile">
+
+                    <!-- Movie -->
+                    <div class="column is-half-tablet is-one-third-desktop">
+                        <a href="{{ '/multiMediaProj/movie/' | relative_url }}">
+                            <div class="has-background-black card">
+                                <div class="card-content">
+                                    <h1 class="title has-text-white is-size-4">Movie</h1>
+                                    <p class="has-text-white has-text-weight-light content">
+                                        Short films, editing reels, and narrative projects.
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Theater -->
+                    <div class="column is-half-tablet is-one-third-desktop">
+                        <a href="{{ '/multiMediaProj/theater/' | relative_url }}">
+                            <div class="has-background-black card">
+                                <div class="card-content">
+                                    <h1 class="title has-text-white is-size-4">Theater</h1>
+                                    <p class="has-text-white has-text-weight-light content">
+                                        Stage productions, crew roles, and live performance work.
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Photography -->
+                    <div class="column is-half-tablet is-one-third-desktop">
+                        <a href="{{ '/multiMediaProj/photography/' | relative_url }}">
+                            <div class="has-background-black card">
+                                <div class="card-content">
+                                    <h1 class="title has-text-white is-size-4">Photography</h1>
+                                    <p class="has-text-white has-text-weight-light content">
+                                        Portraits, events, and personal photo series.
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    {% include footer.html %}
+</body>
+</html>
