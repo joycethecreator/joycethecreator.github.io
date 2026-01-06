@@ -25,10 +25,11 @@
                    href="{% if page.layout == 'default' %}{{site.url}}{{site.baseurl}}/#{% else %}{{site.url}}{{site.baseurl}}/{% endif %}">HOME</a>
                 <a class="navbar-item" href="{{site.url}}{{site.baseurl}}/#about">ABOUT</a>
                 <a class="navbar-item" href="{{site.url}}{{site.baseurl}}/#contact">CONTACT</a>
-                <a class="navbar-item {% if page.layout == 'project' %}is-active{% endif %}"
-                   href="{{site.url}}{{site.baseurl}}/techProj">TECH PROJECT</a>
-                <a class="navbar-item {% if page.layout == 'project' %}is-active{% endif %}"
-                   href="{{site.url}}{{site.baseurl}}/multiMediaProj">MULTIMEDIA</a>
+                <a class="navbar-item {% if page.url == '/techProj/' %}is-active{% endif %}"
+                   href="{{ site.baseurl }}/techProj/">TECH</a>
+                <a class="navbar-item {% if page.url == '/multiMediaProj/' %}is-active{% endif %}"
+                   href="{{ site.baseurl }}/multiMediaProj/">MULTIMEDIA</a>
+
             </div>
 
         </div>
