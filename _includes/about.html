@@ -11,17 +11,24 @@
                     <p>{{site.author-about}}</p>
                     <br>
                     <div class="container columns is-centered">
-                        <div>
-                            <a href="{{site.url}}{{site.baseurl}}/#contact"
-                                class="button is-rounded is-uppercase has-text-weight-normal is-black is-outlined">Contact
-                                Me</a>
+                        <div class="buttons is-centered is-flex is-flex-direction-column">
+                            <a href="{{ '/#contact' | relative_url }}"
+                               class="button is-rounded is-uppercase has-text-weight-normal is-black is-outlined mb-3">
+                                Contact Me
+                            </a>
+
+                            <a href="{{ '/techProj/' | relative_url }}"
+                               class="button is-rounded is-uppercase has-text-weight-normal is-black is-outlined mb-3">
+                                Tech Projects
+                            </a>
+
+                            <a href="{{ '/multiMediaProj/' | relative_url }}"
+                               class="button is-rounded is-uppercase has-text-weight-normal is-black is-outlined">
+                                Multimedia Projects
                             </a>
                         </div>
-                        <div>
-                            <a href="{{site.url}}{{site.baseurl}}/blog"
-                                class="button is-rounded is-uppercase has-text-weight-normal is-black is-outlined">Projects</a>
-                            </a>
-                        </div>
+
+
                     </div>
                 </div>
             </div>

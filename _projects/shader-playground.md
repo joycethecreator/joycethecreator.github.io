@@ -50,3 +50,4 @@ void main() {
     float color = 0.5 + 0.5 * sin(u_time + uv.x * 10.0);
     gl_FragColor = vec4(vec3(color), 1.0);
 }
+```
