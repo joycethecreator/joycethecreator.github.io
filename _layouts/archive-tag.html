@@ -1,0 +1,64 @@
+---
+layout: compress
+---
+
+<!DOCTYPE html>
+<html>
+<head>
+    {% include head.html %}
+</head>
+
+<body>
+    {% include navbar.html %}
+
+    <section class="hero is-fullheight">
+        <div class="hero-body">
+            <div class="container has-text-centered">
+
+                <div class="section">
+                    <p class="subtitle is-uppercase has-text-weight-medium has-text-grey">Tag</p>
+                    <h1 class="title has-text-white">{{ page.title | default: page.tag }}</h1>
+                </div>
+
+                {% assign tagname = page.tag | default: page.title %}
+                {% assign tagged_posts = site.posts | where_exp: "p", "p.tags contains tagname" %}
+                {% assign tagged_projects = site.projects | default: empty | where_exp: "p", "p.tags contains tagname" %}
+
+                {% if tagged_posts == empty and tagged_projects == empty %}
+                <p class="has-text-grey">No items found for tag <strong>{{ tagname }}</strong>.</p>
+                {% endif %}
+
+                {% if tagged_projects != empty %}
+                <div class="section">
+                    <p class="subtitle is-uppercase has-text-weight-medium has-text-grey">Projects</p>
+                    <div class="columns is-centered is-multiline is-mobile">
+                        {% for project in tagged_projects %}
+                        {% include project-card.html project=project %}
+                        {% endfor %}
+                    </div>
+                </div>
+                {% endif %}
+
+                {% if tagged_posts != empty %}
+                <div class="section">
+                    <p class="subtitle is-uppercase has-text-weight-medium has-text-grey">Posts</p>
+                    <div class="content has-text-left has-text-white">
+                        <ul>
+                            {% for post in tagged_posts %}
+                            <li>
+                                <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+                                <span class="has-text-grey"> - {{ post.date | date: "%Y-%m-%d" }}</span>
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+                {% endif %}
+
+            </div>
+        </div>
+    </section>
+
+    {% include footer.html %}
+</body>
+</html>

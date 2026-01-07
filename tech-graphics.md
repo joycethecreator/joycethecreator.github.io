@@ -1,7 +1,7 @@
 ---
-layout: cat-projects
+layout: projects-index
 title: Graphics Programming
 permalink: /techProj/graphics/
-data_source: tech
 category: graphics
+description: Rendering, simulation, and graphics programming projects exploring real-time pipelines, shaders, geometry, and GPU computation.
 ---

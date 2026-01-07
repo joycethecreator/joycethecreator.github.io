@@ -1,7 +1,7 @@
 ---
-layout: cat-projects
-title: Unity
+layout: projects-index
+title: Unity Projects
 permalink: /techProj/unity/
-data_source: tech
 category: unity
+description: Game development and interactive projects built with Unity, focusing on gameplay systems, tools, and real-time interaction.
 ---

@@ -1,6 +1,8 @@
 {%- comment -%}
-  Expects:
-    project (object with name, description, image, link)
+Expects:
+  project = a document from site.projects
+Uses:
+  project.url, project.title, project.cover, project.description
 {%- endcomment -%}
 
 <div class="column has-text-centered is-paddingless is-marginless
@@ -8,28 +10,30 @@
             is-one-third-tablet is-two-fifths-mobile is-three-quarters-touch"
      id="project-card">
 
-    {% if project.link and project.link != "" %}
-    <a href="{{ project.link }}" target="_blank" rel="noopener">
-        {% endif %}
-
+    <a href="{{ project.url | relative_url }}">
         <div class="has-background-black card">
+
+            {% if project.cover %}
             <figure class="image is-3by1"
-                    style="background-image: url({{ project.image | relative_url }});">
+                    style="background-image: url({{ project.cover | relative_url }});">
             </figure>
+            {% else %}
+            <figure class="image is-3by1"></figure>
+            {% endif %}
 
             <div class="card-content">
-                <h1 class="title has-text-white is-size-4">{{ project.name }}</h1>
+                <h1 class="title has-text-white is-size-4">{{ project.title }}</h1>
+
                 {% if project.description %}
                 <p class="has-text-white has-text-weight-light content">
                     {{ project.description | truncate: 80 }}
                 </p>
                 {% endif %}
             </div>
-        </div>
 
-        {% if project.link and project.link != "" %}
+        </div>
     </a>
-    {% endif %}
 </div>
+
 
 

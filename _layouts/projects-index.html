@@ -1,0 +1,77 @@
+---
+layout: compress
+---
+
+<!DOCTYPE html>
+<html>
+<head>
+    {% include head.html %}
+</head>
+
+<body>
+    {% include navbar.html %}
+
+    <section class="hero is-fullheight" id="project">
+        <div class="hero-body">
+            <div class="container has-text-centered">
+
+                <div class="section">
+                    <p class="subtitle is-uppercase has-text-weight-medium has-text-grey">
+                        {{ page.title | default: "Projects" }}
+                    </p>
+                    {% if page.description %}
+                    <p class="has-text-grey">{{ page.description }}</p>
+                    {% endif %}
+                </div>
+
+                {% comment %}
+                site.projects will be nil unless:
+                - _config.yml defines collections.projects
+                - folder is named _projects
+                {% endcomment %}
+
+                {% if site.projects %}
+                {% assign items = site.projects %}
+
+                {% if page.category %}
+                {% assign items = items | where: "category", page.category %}
+                {% endif %}
+
+                {% assign items = items | where_exp: "p", "p.draft != true" %}
+
+                {% if items == empty %}
+                <p class="has-text-grey">
+                    No projects found{% if page.category %} for <strong>{{ page.category }}</strong>{% endif %}.
+                </p>
+                {% else %}
+
+                {%- comment -%}
+                Sorting:
+                - If you add `order:` in front matter, it sorts by that (ascending)
+                - Otherwise it sorts by title (ascending)
+                Liquid can't do perfect fallbacks, so we keep it simple + safe.
+                {%- endcomment -%}
+
+                {% assign sorted = items | sort: "order" %}
+                <div class="columns is-centered is-multiline is-mobile">
+                    {% for project in sorted %}
+                    {% include project-card.html project=project %}
+                    {% endfor %}
+                </div>
+
+                {% endif %}
+
+                {% else %}
+                <p class="has-text-grey">
+                    Projects collection not found. Check:
+                    <code>_config.yml</code> has <code>collections: projects</code> and your folder is <code>_projects/</code>.
+                </p>
+                {% endif %}
+
+            </div>
+        </div>
+    </section>
+
+    {% include footer.html %}
+</body>
+</html>
