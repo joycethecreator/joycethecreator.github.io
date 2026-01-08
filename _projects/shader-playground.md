@@ -10,6 +10,7 @@ date: 2025-06-03
 
 This project is a **real-time GLSL shader demo** rendered directly in the browser.
 It explores fragment shading, color interpolation, and interactive parameters.
+I'm polishing my past shader works so that they will be able to be interactive on this website soon.
 
 ---
 
