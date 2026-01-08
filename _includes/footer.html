@@ -42,13 +42,20 @@
 
             <!--Blog-post Section-->
             <div class="column has-text-white">
-                <h3>Recent Posts</h3>
-                {% for post in site.posts offset: 0 limit:3 %}
-                <li>
-                    <a href="{{post.url | absolute_url}}">{{post.title}}</a>
-                </li>
-                {% endfor %}
+                <h3>Recent Projects</h3>
+
+                <ul class="footer-projects">
+                    {% assign recent_projects = site.projects | sort: "date" | reverse %}
+                    {% for project in recent_projects limit:3 %}
+                    <li>
+                        <a href="{{ project.url | relative_url }}">
+                            {{ project.title }}
+                        </a>
+                    </li>
+                    {% endfor %}
+                </ul>
             </div>
+
         </div>
     </div>
     <div class="has-background-black has-text-centered has-text-white" id="credits">
