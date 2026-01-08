@@ -1,7 +1,9 @@
 <div class="photo-flow">
     {% for item in include.images %}
     <div class="photo-item {% if item.span == 'full' %}full{% endif %}">
-        <img src="{{ item.src | relative_url }}" loading="lazy">
+        <img src="{{ item.src | relative_url }}"
+             loading="lazy"
+             class="photo-image">
     </div>
     {% endfor %}
 </div>

@@ -7,10 +7,10 @@ category: photography
 tags: [photography, hongkong, street]
 date: 2025-06-03
 gallery:
-  - src: /assets/images/photography/Blues/01.jpg
+  - src: /assets/images/photography/Blues/01.JPG
     span: full
   - src: /assets/images/photography/Blues/02.jpg
-  - src: /assets/images/photography/Blues/03.jpg
-  - src: /assets/images/photography/Blues/04.jpg
+  - src: /assets/images/photography/Blues/03.JPG
+  - src: /assets/images/photography/Blues/04.JPG
     span: full
 ---

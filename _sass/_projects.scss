@@ -200,3 +200,10 @@
     }
 }
 
+#project .photo-flow img,
+#project .gallery-image,
+#project .photo-image {
+    border-radius: 0 !important;
+    box-shadow: none !important;
+}
+
