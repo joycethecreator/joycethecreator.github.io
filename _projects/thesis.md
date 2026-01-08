@@ -2,7 +2,7 @@
 layout: project
 title: Voxel Constraints for Parallel XPBD Simulation
 description: GPU-first soft-body simulation using voxel primitives for stable parallel constraint solving and LoD long-range stiffness.
-cover: /assets/images/projects/voxel-xpbd/cover.png
+cover: /assets/images/thesis.jpg
 category: graphics
 tags: [xpbd, pbd, gpu, compute-shaders, voxel, physics, constraints]
 date: 2025-04-05

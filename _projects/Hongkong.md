@@ -1,7 +1,7 @@
 ---
 layout: project
 title: Hongkong Express
-description: Street photos from Hongkong
+description: Street photos from Hong Kong
 cover: /assets/images/photography/hongkong/06.JPEG
 category: photography
 tags: [photography, hongkong, street]

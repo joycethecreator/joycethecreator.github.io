@@ -2,7 +2,7 @@
 layout: project
 title: Fluid Simulation with Smoothed Particle Hydrodynamics (SPH)
 description: A Lagrangian, particle-based fluid simulator using SPH kernels and pressure/viscosity forces, with real-time collision handling and a live demo.
-cover: /assets/images/projects/sph/cover.png
+cover: /assets/images/sph.png
 category: graphics
 tags: [fluid-simulation, sph, physics, lagrangian, simulation, graphics]
 date: 2025-05-01
