@@ -1,8 +1,8 @@
-<div class="columns is-multiline is-mobile is-centered">
+<div class="columns is-multiline is-mobile is-centered gallery-grid">
     {% for img in include.images %}
     <div class="column is-half-tablet is-one-third-desktop">
-        <figure class="image is-4by3">
-            <img src="{{ img | relative_url }}" alt="Project image">
+        <figure class="image">
+            <img src="{{ img | relative_url }}" alt="Project image" loading="lazy" class="gallery-image">
         </figure>
     </div>
     {% endfor %}

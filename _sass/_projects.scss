@@ -163,3 +163,19 @@
 #project .box {
     border-radius: 16px;
 }
+
+.gallery-grid img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 14px;
+}
+
+.gallery-grid .column {
+    padding: 0.75rem;
+}
+.gallery-image {
+    border-radius: 0 !important;
+    box-shadow: none;
+}
+
