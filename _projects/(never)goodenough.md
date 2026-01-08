@@ -2,7 +2,7 @@
 layout: project
 title: Student Film (Producer · Editor · Camera Operator)
 description: A narrative student film where I led production logistics, shot key scenes, and edited the final cut.
-cover: /assets/images/projects/multimedia/student-film-cover.jpg
+cover: /assets/images/nge.png
 category: movie
 tags: [film, producer, editor, camera, storytelling]
 date: 2024-05-01

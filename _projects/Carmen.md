@@ -2,7 +2,7 @@
 layout: project
 title: "Carmen: L'amour est un oiseau rebelle"
 description: An experimental lighting design project exploring color, rhythm, and emotional contrast through operatic performance.
-cover: /assets/images/projects/multimedia/carmen-lighting-cover.jpg
+cover: /assets/images/carmen.png
 category: theater
 tags: [lighting-design, theater, opera, stage-lighting, performance]
 date: 2024-04-01

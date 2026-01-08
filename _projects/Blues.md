@@ -2,7 +2,7 @@
 layout: project
 title: Blues around the World
 description: Street photos from Hongkong
-cover: 
+cover: /assets/images/photography/Blues/01.JPEG
 category: photography
 tags: [photography, hongkong, street]
 date: 2025-06-03

@@ -2,7 +2,7 @@
 layout: project
 title: Hyakki Yagyō
 description: Night in City in Japan
-cover: 
+cover: /assets/images/photography/HyakkiYagyo/01.JPG
 category: photography
 tags: [photography, hongkong, street]
 date: 2025-06-03
