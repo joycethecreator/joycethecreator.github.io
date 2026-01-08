@@ -1,24 +1,71 @@
-<section class="hero is-fullheight has-text-centered has-background-white-ter" id="about">
+<section class="hero is-fullheight has-background-white-ter" id="about">
     <div class="hero-body">
         <div class="container">
-            <div class="columns">
-                <div class="column is-one-fifth-desktop is-one-fifth-tablet is-one-fifth-fullhd">
-                    <figure class="image">
-                        <img class="is-rounded" src="{{site.author-image}}" alt="{{site.author-name}}">
+
+            <div class="columns is-vcentered">
+                <!-- Profile Image -->
+                <div class="column is-one-fifth-desktop is-one-quarter-tablet has-text-centered">
+                    <figure class="image is-inline-block">
+                        <img class="is-rounded" src="{{ site.author-image }}" alt="{{ site.author-name }}">
                     </figure>
                 </div>
-                <div class="column has-text-left-desktop has-text-left-tablet has-text-left-fullhd has-text-left-widescreen">
-                    <p>{{site.author-about}}</p>
-                    <br>
-                    <div class="container columns is-centered">
-                        <div class="buttons is-centered is-flex is-flex-direction-column">
+
+                <!-- Content -->
+                <div class="column">
+
+                    <!-- Introduction -->
+                    <section class="section compact-section">
+                        <h2 class="title is-4">Introduction</h2>
+                        <p>{{ site.author-about }}</p>
+                    </section>
+
+                    <!-- Education -->
+                    <section class="section compact-section">
+                        <h2 class="title is-4">Education</h2>
+
+                        <p>
+                            <strong>Purdue University</strong>, West Lafayette, IN<br>
+                            <em>Master of Science in Computer Graphics Technology</em><br>
+                            Aug 2024 · GPA: 4.00 / 4.0
+                        </p>
+
+                        <p class="mt-3">
+                            <strong>Purdue University</strong><br>
+                            <em>B.S. Computer Science / B.A. Film & Theater Production</em><br>
+                            May 2022 · GPA: 3.73 / 4.0
+                        </p>
+                    </section>
+
+                    <!-- Skills -->
+                    <section class="section compact-section">
+                        <h2 class="title is-4">Skills</h2>
+
+                        <p>
+                            <strong>Programming:</strong><br>
+                            C, C++, C#, Java, Python
+                        </p>
+
+                        <p class="mt-2">
+                            <strong>Graphics APIs & Tools:</strong><br>
+                            OpenGL, GLSL, Unity, VTK, Compute Shaders, MATLAB, R
+                        </p>
+
+                        <p class="mt-2">
+                            <strong>Post-production & Media:</strong><br>
+                            DaVinci Resolve, Adobe Premiere Pro, After Effects
+                        </p>
+                    </section>
+
+                    <!-- Actions -->
+                    <section class="section pt-0">
+                        <div class="buttons is-flex is-flex-direction-column is-align-items-flex-start">
                             <a href="{{ '/#contact' | relative_url }}"
-                               class="button is-rounded is-uppercase has-text-weight-normal is-black is-outlined mb-3">
+                               class="button is-rounded is-uppercase has-text-weight-normal is-black is-outlined mb-2">
                                 Contact Me
                             </a>
 
                             <a href="{{ '/techProj/' | relative_url }}"
-                               class="button is-rounded is-uppercase has-text-weight-normal is-black is-outlined mb-3">
+                               class="button is-rounded is-uppercase has-text-weight-normal is-black is-outlined mb-2">
                                 Tech Projects
                             </a>
 
@@ -27,10 +74,31 @@
                                 Multimedia Projects
                             </a>
                         </div>
+                    </section>
 
+                    <!--CV-->>
+                    <section class="section compact-section">
+                        <h2 class="title is-4">Curriculum Vitae</h2>
 
-                    </div>
+                        <p class="mb-3">
+                            Download a copy of my cv.
+                        </p>
+
+                        <div class="buttons mb-4">
+                            <a href="{{ '/assets/cv/Joyce_Zhou_CV.pdf' | relative_url }}"
+                               class="button is-rounded is-black is-outlined"
+                               download>
+                                Download CV
+                            </a>
+                        </div>
+
+                        
+                    </section>
+
                 </div>
             </div>
+
         </div>
+    </div>
 </section>
+
