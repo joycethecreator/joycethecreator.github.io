@@ -1,3 +1,6 @@
+/* =========================================
+   Media Embeds
+========================================= */
 .video-container {
     position: relative;
     padding-bottom: 56.25%; /* 16:9 */
@@ -8,41 +11,15 @@
 
 .video-container iframe {
     position: absolute;
-    top: 0;
-    left: 0;
+    inset: 0;
     width: 100%;
     height: 100%;
 }
 
-.tech-landing .tech-card {
-    display: block;
-    border-radius: 18px;
-    padding: 3rem 2rem;
-    height: 100%;
-    transition: transform 0.25s ease, box-shadow 0.25s ease;
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
-}
-
-.tech-landing .tech-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 24px 50px rgba(0, 0, 0, 0.45);
-}
-
-.tech-landing .tech-card .icon {
-    font-size: 2.5rem;
-    display: block;
-    margin-bottom: 1rem;
-}
-
-/* Theme variants */
-.tech-landing .tech-card.graphics {
-    background: linear-gradient(135deg, #111827, #1f2933);
-}
-
-.tech-landing .tech-card.unity {
-    background: linear-gradient(135deg, #1a1a1a, #2c2c2c);
-}
-
+/* =========================================
+   Landing Cards (Tech + Multimedia)
+========================================= */
+.tech-landing .tech-card,
 .media-landing .media-card {
     display: block;
     border-radius: 18px;
@@ -52,18 +29,29 @@
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
 }
 
+.tech-landing .tech-card:hover,
 .media-landing .media-card:hover {
     transform: translateY(-8px);
     box-shadow: 0 24px 50px rgba(0, 0, 0, 0.45);
 }
 
+.tech-landing .tech-card .icon,
 .media-landing .media-card .icon {
     font-size: 2.5rem;
     display: block;
     margin-bottom: 1rem;
 }
 
-/* Theme variants */
+/* Tech theme variants */
+.tech-landing .tech-card.graphics {
+    background: linear-gradient(135deg, #111827, #1f2933);
+}
+
+.tech-landing .tech-card.unity {
+    background: linear-gradient(135deg, #1a1a1a, #2c2c2c);
+}
+
+/* Media theme variants */
 .media-landing .media-card.movie {
     background: linear-gradient(135deg, #111827, #312e81);
 }
@@ -76,6 +64,9 @@
     background: linear-gradient(135deg, #0f172a, #134e4a);
 }
 
+/* =========================================
+   Project Cards (Index Pages)
+========================================= */
 .project-grid {
     margin-top: 1rem;
 }
@@ -86,13 +77,13 @@
     overflow: hidden;
     text-decoration: none;
     background: #0b0b0b;
-    box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
     transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .project-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 24px 50px rgba(0,0,0,0.35);
+    box-shadow: 0 24px 50px rgba(0, 0, 0, 0.35);
 }
 
 .project-card__media {
@@ -111,7 +102,7 @@
 .project-card__overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(180deg, rgba(0,0,0,0.15), rgba(0,0,0,0.85));
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.85));
 }
 
 .project-card__chip {
@@ -123,8 +114,8 @@
     font-size: 0.75rem;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    color: rgba(255,255,255,0.9);
-    background: rgba(0,0,0,0.55);
+    color: rgba(255, 255, 255, 0.9);
+    background: rgba(0, 0, 0, 0.55);
     backdrop-filter: blur(6px);
 }
 
@@ -141,22 +132,55 @@
 }
 
 .project-card__desc {
-    color: rgba(255,255,255,0.75);
+    color: rgba(255, 255, 255, 0.75);
     font-size: 0.95rem;
     line-height: 1.35;
     margin-bottom: 0.9rem;
 }
 
 .project-card__cta {
-    color: rgba(255,255,255,0.9);
+    color: rgba(255, 255, 255, 0.9);
     font-size: 0.85rem;
     letter-spacing: 0.02em;
     margin: 0;
 }
 
+/* =========================================
+   Project Page Spacing + Typography
+========================================= */
+.project-header {
+    margin: 0 auto 1.25rem;
+    padding-top: 0.75rem;
+}
+
+.project-title {
+    margin-bottom: 0.75rem;
+}
+
+.project-description {
+    margin: 0.25rem auto 0;
+    max-width: 70ch;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.78);
+}
+
+.project-media {
+    margin-top: 1.25rem;
+    margin-bottom: 1.75rem;
+}
+
+.project-content {
+    margin-top: 1.5rem;
+}
+
+.project-content > :first-child {
+    margin-top: 0 !important;
+}
+
+/* Default project-page image styling (non-photo projects) */
 #project img {
     border-radius: 14px;
-    box-shadow: 0 12px 30px rgba(0,0,0,0.18);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
     margin: 1rem 0 1.5rem;
 }
 
@@ -164,42 +188,40 @@
     border-radius: 16px;
 }
 
-.gallery-grid img {
-    width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 14px;
-}
-
-.gallery-grid .column {
-    padding: 0.75rem;
-}
-.gallery-image {
-    border-radius: 0 !important;
-    box-shadow: none;
-}
-
+/* =========================================
+   Photo Layout (Photography projects)
+   - No rounded corners
+   - No shadows
+========================================= */
 .photo-flow {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem; /* desktop default */
 }
 
 .photo-item.full {
-    grid-column: span 2;
+    grid-column: 1 / -1;
 }
 
-.photo-flow img {
+.photo-image {
     width: 100%;
     height: auto;
+    display: block;
+    border-radius: 0 !important;
+    box-shadow: none !important;
 }
 
-@media (max-width: 768px) {
+/*  Keep 2 columns on phones, but tighten spacing to avoid overflow */
+@media (max-width: 480px) {
     .photo-flow {
-        grid-template-columns: 1fr;
+        gap: 0.5rem;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
     }
 }
 
+
+/* Also force any gallery images in photo projects to be square-edged */
 #project .photo-flow img,
 #project .gallery-image,
 #project .photo-image {
@@ -207,10 +229,32 @@
     box-shadow: none !important;
 }
 
-/* Force About section headings + text to share the same left edge */
+/* =========================================
+   (Optional) Legacy gallery grid support
+   Keep if you still use .gallery-grid somewhere
+========================================= */
+.gallery-grid img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.gallery-grid .column {
+    padding: 0.75rem;
+}
+
+.gallery-image {
+    border-radius: 0 !important;
+    box-shadow: none !important;
+}
+
+/* =========================================
+   About Section Alignment + Spacing
+========================================= */
 #about .about-block {
     padding-left: 0 !important;
     padding-right: 0 !important;
+    margin-bottom: 2rem;
 }
 
 #about .about-block > h1,
@@ -225,70 +269,8 @@
     text-align: left !important;
 }
 
-/* Force About section headings + text to share the same left edge */
-#about .about-block {
-  padding-left: 0 !important;
-  padding-right: 0 !important;
-}
-
-#about .about-block > h1,
-#about .about-block > h2,
-#about .about-block > h3,
-#about .about-block > p,
-#about .about-block > ul,
-#about .about-block > ol,
-#about .about-block > div {
-  margin-left: 0 !important;
-  padding-left: 0 !important;
-  text-align: left !important;
-}
-
-#about .about-block {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-    /* vertical spacing between sections */
-    margin-bottom: 2rem;
-}
-
-/* Optional: slightly tighter spacing after titles */
 #about .about-block > h1,
 #about .about-block > h2,
 #about .about-block > h3 {
     margin-bottom: 0.75rem;
 }
-
-/* --- Project page spacing + typography (balanced) --- */
-
-.project-header {
-    margin: 0 auto 1.25rem; /* more air under header */
-    padding-top: 0.75rem;
-}
-
-.project-title {
-    margin-bottom: 0.75rem; /* space between title & description */
-}
-
-.project-description {
-    margin: 0.25rem auto 0;
-    max-width: 70ch;
-    line-height: 1.7;
-    color: rgba(255, 255, 255, 0.78);
-}
-
-/* Media spacing */
-.project-media {
-    margin-top: 1.25rem; /* breathing room before first image/video */
-    margin-bottom: 1.75rem;
-}
-
-/* Content spacing */
-.project-content {
-    margin-top: 1.5rem; /* separation from media */
-}
-
-/* Prevent extra margin from markdown headings */
-.project-content > :first-child {
-    margin-top: 0 !important;
-}
-
-

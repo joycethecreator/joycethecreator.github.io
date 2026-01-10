@@ -10,6 +10,7 @@ gallery:
   - src: /assets/images/photography/HyakkiYagyo/01.JPG
     span: full
   - src: /assets/images/photography/HyakkiYagyo/02.JPG
-  - src: /assets/images/photography/HyakkiYagyo/03.JPG
   - src: /assets/images/photography/HyakkiYagyo/04.JPG
+  - src: /assets/images/photography/HyakkiYagyo/03.JPG
+    span: full
 ---
