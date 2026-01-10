@@ -1,78 +1,74 @@
 ---
 layout: project
 title: Student Film (Producer · Editor · Camera Operator)
-description: A narrative student film where I led production logistics, shot key scenes, and edited the final cut.
+description: A narrative student film where I contributed across production, cinematography, and post-production, with a focus on editing, color refinement, and audio balance.
 cover: /assets/images/nge.png
 category: movie
-tags: [film, producer, editor, camera, storytelling]
+tags: [film, producer, editor, cinematography, post-production, color-grading, audio]
 date: 2024-05-01
 youtube: JvBYZFg7t8Y
+bts_gallery:
+  - src: /assets/images/film/01.JPEG
+  - src: /assets/images/film/02.JPEG
+  - src: /assets/images/film/03.JPEG
+    span: full
 ---
 
 ## TL;DR
-I contributed across the full pipeline of a student film as **producer, editor, and camera operator**. I coordinated production planning and on-set execution, captured footage on camera, and delivered the final edit with pacing, continuity, and sound/image polish.
-
----
-
-## Purpose
-This project was created as a student narrative film focused on clear visual storytelling and efficient small-crew production. The goal was to deliver a coherent short film under real constraints: limited time, limited crew, and tight shooting schedules.
+I worked across the full filmmaking pipeline as **producer, camera operator, and editor**, supporting production logistics on set and shaping the final film through editing, color refinement, and audio mixing in post-production.
 
 ---
 
 ## My Roles
 
 ### Producer
-- Organized the shoot plan and kept the production on schedule
-- Coordinated logistics (locations, time blocks, equipment needs)
-- Supported team communication and made sure deliverables stayed aligned
+- Coordinated production logistics, including scheduling, locations, and equipment planning  
+- Kept the shoot organized and on schedule under time constraints  
+- Supported communication between crew members to ensure smooth execution  
 
 ### Camera Operator
-- Shot key scenes and coverage to support the edit
-- Focused on framing, exposure, and continuity between takes
-- Worked with the director/team to execute the visual plan
+- Shot key scenes and coverage with attention to framing, exposure, and continuity  
+- Maintained visual consistency across takes to support editing flexibility  
+- Collaborated with the director and crew to execute the planned visual language  
 
-### Editor
-- Built the final cut from selects, organizing footage for speed and consistency
-- Shaped pacing and emotional beats through timing and shot selection
-- Cleaned continuity, tightened scenes, and delivered a polished final export
+### Editor / Post-Production
+- Assembled the film from raw footage, organizing clips by scene and take for efficient iteration  
+- Refined pacing, continuity, and emotional rhythm through multiple editing passes  
+- Performed basic color correction and stylistic color grading to unify shots and enhance mood  
+- Balanced dialogue, ambient sound, and music through audio leveling and cleanup 
+- Delivered a polished final cut suitable for presentation and screening  
 
 ---
 
-## Methodology (How I approached the work)
+## Approach & Workflow
 
 ### Pre-production
-- Broke down the story into shootable beats
-- Identified critical shots needed for narrative clarity and editing flexibility
-- Planned for coverage to protect the edit (wide/medium/close-ups, inserts)
+- Broke down the script into shootable units and editing needs  
+- Identified essential coverage (wide, medium, close-ups, inserts) to protect the edit  
+- Planned shot continuity and transitions with post-production in mind  
 
 ### Production
-- Captured footage with consistency (framing, eyelines, screen direction)
-- Prioritized clean audio and stable shots where possible
-- Adjusted shot strategy based on time constraints while protecting the story
+- Captured footage with consistent framing, screen direction, and exposure  
+- Adapted shot plans as needed while maintaining narrative clarity  
+- Prioritized usable audio and stable coverage for post-production flexibility  
 
 ### Post-production
-- Organized footage into bins by scene and take
-- Assembled a rough cut, then iterated through tightening and continuity passes
-- Finalized the cut with basic color/contrast balancing and audio leveling
-
----
-
-## Results
-- Delivered a complete student short film with a clear story arc and cohesive pacing
-- Built production experience spanning planning, filming, and post
-- Strengthened my ability to work across roles while maintaining quality under constraints
+- Organized footage into structured bins to streamline editing  
+- Built a rough cut and iteratively refined timing, transitions, and continuity  
+- Applied color adjustments to correct exposure and establish visual coherence  
+- Mixed and leveled audio to ensure clarity and balance across scenes  
 
 ---
 
 ## Tools
-- Editing: (add your tool, e.g., Adobe Premiere Pro / DaVinci Resolve)
-- Camera: (add camera model if you want)
-- Audio: (optional)
+- Editing & Post-production: **Adobe Premiere Pro**, **DaVinci Resolve**
 
 ---
 
-## Credits
-- Director: (name)
-- Cast: (names)
-- Crew: (names)
-- My roles: Producer, Editor, Camera Operator
+## On-Set Photography
+
+Selected behind-the-scenes photos taken during production
+
+{% include gallery.html images=page.bts_gallery %}
+
+
