@@ -5,7 +5,7 @@ description: GPU-first soft-body simulation using voxel primitives for stable pa
 cover: /assets/images/thesis.jpg
 category: graphics
 tags: [xpbd, pbd, gpu, compute-shaders, voxel, physics, constraints]
-date: 2025-04-05
+date: 2025-03-06
 ---
 
 ## TL;DR

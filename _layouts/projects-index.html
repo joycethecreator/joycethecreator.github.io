@@ -52,7 +52,7 @@ layout: compress
                 Liquid can't do perfect fallbacks, so we keep it simple + safe.
                 {%- endcomment -%}
 
-                {% assign sorted = items | sort: "order" %}
+                {% assign sorted = items | sort: "date" | reverse %}
                 <div class="columns is-centered is-multiline is-mobile">
                     {% for project in sorted %}
                     {% include project-card.html project=project %}

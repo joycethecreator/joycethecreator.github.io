@@ -5,7 +5,7 @@ description: A Lagrangian, particle-based fluid simulator using SPH kernels and 
 cover: /assets/images/sph.png
 category: graphics
 tags: [fluid-simulation, sph, physics, lagrangian, simulation, graphics]
-date: 2025-05-01
+date: 2025-03-04
 ---
 
 ## TL;DR

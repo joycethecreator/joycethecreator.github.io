@@ -5,7 +5,7 @@ description: A stylized OpenGL “mini Minecraft” scene featuring terrain rend
 cover: /assets/images/vaporWave.jpg
 category: graphics
 tags: [opengl, rendering, terrain, skybox, textures, viewport, vaporwave]
-date: 2025-05-15
+date: 2025-03-03
 ---
 
 ## TL;DR

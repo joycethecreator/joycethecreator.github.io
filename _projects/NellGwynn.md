@@ -5,8 +5,11 @@ description: A livestreamed theatre production adapted for digital performance d
 category: theater
 cover: /assets/images/nellGwynn.jpg
 date: 2021-02-19
----
+gallery: 
+  - src: /assets/images/theater/nellGwynn.jpg
+    span: full
 
+---
 ## Overview
 *Nell Gwynn* by Jessica Swale was the **first livestreamed mainstage production** by Purdue University’s Department of Theatre, adapted for digital performance during the COVID-19 pandemic.
 

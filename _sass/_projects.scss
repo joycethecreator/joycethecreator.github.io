@@ -207,3 +207,88 @@
     box-shadow: none !important;
 }
 
+/* Force About section headings + text to share the same left edge */
+#about .about-block {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+#about .about-block > h1,
+#about .about-block > h2,
+#about .about-block > h3,
+#about .about-block > p,
+#about .about-block > ul,
+#about .about-block > ol,
+#about .about-block > div {
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+    text-align: left !important;
+}
+
+/* Force About section headings + text to share the same left edge */
+#about .about-block {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+#about .about-block > h1,
+#about .about-block > h2,
+#about .about-block > h3,
+#about .about-block > p,
+#about .about-block > ul,
+#about .about-block > ol,
+#about .about-block > div {
+  margin-left: 0 !important;
+  padding-left: 0 !important;
+  text-align: left !important;
+}
+
+#about .about-block {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    /* vertical spacing between sections */
+    margin-bottom: 2rem;
+}
+
+/* Optional: slightly tighter spacing after titles */
+#about .about-block > h1,
+#about .about-block > h2,
+#about .about-block > h3 {
+    margin-bottom: 0.75rem;
+}
+
+/* --- Project page spacing + typography (balanced) --- */
+
+.project-header {
+    margin: 0 auto 1.25rem; /* more air under header */
+    padding-top: 0.75rem;
+}
+
+.project-title {
+    margin-bottom: 0.75rem; /* space between title & description */
+}
+
+.project-description {
+    margin: 0.25rem auto 0;
+    max-width: 70ch;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.78);
+}
+
+/* Media spacing */
+.project-media {
+    margin-top: 1.25rem; /* breathing room before first image/video */
+    margin-bottom: 1.75rem;
+}
+
+/* Content spacing */
+.project-content {
+    margin-top: 1.5rem; /* separation from media */
+}
+
+/* Prevent extra margin from markdown headings */
+.project-content > :first-child {
+    margin-top: 0 !important;
+}
+
+

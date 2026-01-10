@@ -5,7 +5,7 @@ description: A live demo of an interactive GLSL shader running in the browser.
 cover: 
 category: graphics
 tags: [graphics, shaders, glsl, webgl]
-date: 2025-03-03
+date: 2025-03-01
 ---
 
 This project is a **real-time GLSL shader demo** rendered directly in the browser.

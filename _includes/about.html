@@ -3,10 +3,13 @@
         <div class="container">
 
             <div class="columns is-vcentered">
+
                 <!-- Profile Image -->
                 <div class="column is-one-fifth-desktop is-one-quarter-tablet has-text-centered">
                     <figure class="image is-inline-block">
-                        <img class="is-rounded" src="{{ site.author-image }}" alt="{{ site.author-name }}">
+                        <img class="is-rounded"
+                             src="{{ site.author-image }}"
+                             alt="{{ site.author-name }}">
                     </figure>
                 </div>
 
@@ -14,13 +17,15 @@
                 <div class="column">
 
                     <!-- Introduction -->
-                    <section class="section compact-section">
+                    <section class="about-block">
+
                         <h2 class="title is-4">Introduction</h2>
                         <p>{{ site.author-about }}</p>
                     </section>
 
                     <!-- Education -->
-                    <section class="section compact-section">
+                    <section class="about-block">
+
                         <h2 class="title is-4">Education</h2>
 
                         <p>
@@ -37,7 +42,8 @@
                     </section>
 
                     <!-- Skills -->
-                    <section class="section compact-section">
+                    <section class="about-block">
+
                         <h2 class="title is-4">Skills</h2>
 
                         <p>
@@ -56,43 +62,63 @@
                         </p>
                     </section>
 
+                    <!-- Publications -->
+                    <section class="about-block">
+
+                        <h2 class="title is-4">Publications</h2>
+
+                        <p class="mb-2">
+                            McGraw, T., <strong>Zhou, X.</strong> (2025).
+                            <em>Real-time voxelized mesh fracture with Gram-Schmidt constraints.</em><br>
+                            <span class="has-text-grey">
+                                Computers & Graphics, Elsevier.
+                            </span>
+                        </p>
+
+                        <p>
+                            <a href="https://doi.org/10.1016/j.cag.2025.104382"
+                               target="_blank"
+                               rel="noopener">
+                                https://doi.org/10.1016/j.cag.2025.104382
+                            </a>
+                        </p>
+                    </section>
+
                     <!-- Actions -->
-                    <section class="section compact-section">
+                    <section class="about-block">
+
                         <div class="buttons is-flex is-flex-direction-column is-align-items-flex-start">
                             <a href="{{ '/#contact' | relative_url }}"
-                               class="button is-rounded is-uppercase has-text-weight-normal is-black is-outlined mb-2">
+                               class="button is-rounded is-uppercase is-black is-outlined mb-2">
                                 Contact Me
                             </a>
 
                             <a href="{{ '/techProj/' | relative_url }}"
-                               class="button is-rounded is-uppercase has-text-weight-normal is-black is-outlined mb-2">
+                               class="button is-rounded is-uppercase is-black is-outlined mb-2">
                                 Tech Projects
                             </a>
 
                             <a href="{{ '/multiMediaProj/' | relative_url }}"
-                               class="button is-rounded is-uppercase has-text-weight-normal is-black is-outlined">
+                               class="button is-rounded is-uppercase is-black is-outlined">
                                 Multimedia Projects
                             </a>
                         </div>
                     </section>
 
-                    <!--CV-->
-                    <section class="section compact-section">
+                    <!-- CV -->
+                    <section class="about-block">
+
                         <h2 class="title is-4">Curriculum Vitae</h2>
 
                         <p class="mb-3">
-                            Download a copy of my cv.
+                            Download a copy of my CV.
                         </p>
 
-                        <div class="buttons mb-4">
-                            <a href="{{ '/assets/files/Zhou_CV.pdf' | relative_url }}"
-                               class="button is-rounded is-black is-outlined"
-                               download>
-                                Download CV
-                            </a>
-                        </div>
-
-                        
+                        <a href="{{ '/assets/files/Zhou_CV.pdf' | relative_url }}"
+                           class="button is-rounded is-black is-outlined"
+                           download>
+                            Download CV
+                        </a>
                     </section>
 
                 </div>
@@ -101,4 +127,3 @@
         </div>
     </div>
 </section>
-

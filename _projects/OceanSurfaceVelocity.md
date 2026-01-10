@@ -5,7 +5,7 @@ description: An interactive scientific visualization tool for exploring ocean su
 cover: /assets/images/projects/ocean-viz/cover.jpg
 category: graphics
 tags: [scientific-visualization, data-visualization, oceanography, vector-fields, vorticity, animation]
-date: 2023-05-02
+date: 2025-03-02
 ---
 
 ## TL;DR

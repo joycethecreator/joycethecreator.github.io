@@ -5,7 +5,7 @@ description: An experimental lighting design project exploring color, rhythm, an
 cover: /assets/images/carmen.png
 category: theater
 tags: [lighting-design, theater, opera, stage-lighting, performance]
-date: 2024-04-01
+date: 2025-05-01
 vimeo: 1152426545
 ---
 
@@ -35,7 +35,7 @@ The piece emphasizes contrast — freedom vs restraint, playfulness vs tension �
 
 ### Lighting Designer
 - Designed the overall lighting concept and visual language
-- Selected color palettes to match musical phrasing and emotional beats
+- Selected color palettes and gobos to match musical phrasing and emotional beats
 - Planned cue timing to align with performance structure
 
 ### Lighting Crew
@@ -46,8 +46,6 @@ The piece emphasizes contrast — freedom vs restraint, playfulness vs tension �
 This dual role required balancing **conceptual design decisions** with **practical, on-site execution**.
 
 ---
-
-## Methodology
 
 ### Concept Development
 - Studied the musical and emotional arc of *Carmen*
@@ -66,23 +64,10 @@ This dual role required balancing **conceptual design decisions** with **practic
 
 ---
 
-## Results
-- Delivered a cohesive lighting design that actively supported the performance
-- Demonstrated how lighting alone can define mood and structure
-- Gained hands-on experience integrating artistic intent with real-world constraints
-
-The final result shows lighting functioning as a **performative partner**, not just illumination.
-
----
-
 ## Tools & Techniques
 - Stage lighting fixtures (installation & focusing)
 - Manual and/or programmed cue execution
 - Color gels / LED color control
 - Live rehearsal iteration
 
----
 
-## Credits
-- Performance: *Carmen – L’amour est un oiseau rebelle*
-- My roles: Lighting Designer, Lighting Crew

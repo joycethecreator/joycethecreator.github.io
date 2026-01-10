@@ -5,7 +5,7 @@ description: An interactive OpenGL tool that lets users sketch points on a 2D pl
 cover: /assets/images/3Dmodel.png
 category: graphics
 tags: [opengl, geometry, modeling, mesh-generation, obj, 3d-printing, interaction]
-date: 2025-04-20
+date: 2025-03-05
 ---
 
 ## TL;DR

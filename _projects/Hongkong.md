@@ -1,7 +1,7 @@
 ---
 layout: project
-title: Hongkong Express
-description: Street photos from Hong Kong
+title: Hong Kong Express
+description: Street photography capturing everyday movement, density, and fleeting moments in Hong Kong’s urban environment.
 cover: /assets/images/photography/hongkong/06.JPEG
 category: photography
 tags: [photography, hongkong, street]

@@ -1,7 +1,7 @@
 ---
 layout: project
 title: Hyakki Yagyō
-description: Night in City in Japan
+description: Night photography of traditional Japanese architecture, focusing on artificial light, shadow, and atmosphere.
 cover: /assets/images/photography/HyakkiYagyo/01.JPG
 category: photography
 tags: [photography, hongkong, street]
