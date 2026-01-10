@@ -7,7 +7,7 @@ date: 2022-05-01
 ---
 
 ## Overview
-This project is a **collection of post-production experiments** focused on editing style, color treatment, and visual rhythm. Rather than producing original narrative films, the goal was to explore how **post-production choices alone** can dramatically reshape tone, pacing, and emotional impact.
+This is a **collection of post-production experiments** focused on editing style, color treatment, and visual rhythm. Rather than producing original narrative films, the goal was to explore how **post-production choices alone** can dramatically reshape tone, pacing, and emotional impact.
 
 ---
 
@@ -30,7 +30,6 @@ This project is a **collection of post-production experiments** focused on editi
 
 ---
 
-## Outcome
 These studies strengthened practical skills in:
 - non-linear editing
 - color-driven storytelling

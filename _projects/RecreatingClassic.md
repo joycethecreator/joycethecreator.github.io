@@ -29,7 +29,6 @@ This iterative process emphasized **learning through replication**, a common tra
 
 ---
 
-## Outcome
 The project strengthened technical understanding of visual storytelling and improved practical skills in:
 - cinematography
 - videography

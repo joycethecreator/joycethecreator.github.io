@@ -40,7 +40,6 @@ layout: compress
                 {% endif %}
 
                 <!-- Optional vimeo embed -->
-
                 {% if page.vimeo %}
                 <div class="section">
                     <div style="position: relative; padding-top: 56.25%; border-radius: 14px; overflow: hidden;">
@@ -53,6 +52,15 @@ layout: compress
                     </div>
                 </div>
                 {% endif %}
+
+                {% if page.video_mp4 %}
+                <div class="project-media">
+                    <video controls muted loop playsinline preload="metadata" style="width:100%; display:block;">
+                        <source src="{{ page.video_mp4 | relative_url }}" type="video/mp4">
+                    </video>
+                </div>
+                {% endif %}
+
 
                 <!-- Optional image gallery -->
                 {% if page.gallery %}
