@@ -2,10 +2,19 @@
 layout: project
 title: Chemistry Online Lab
 description: A photorealistic Unity-based online chemistry lab for teaching foundational laboratory skills such as meniscus reading and spectrophotometer operation, used by over 500 students.
-cover: /assets/images/projects/chemistry-lab/cover.jpg
+cover: /assets/images/chem.png
 category: unity
 tags: [unity, simulation, education, training, photorealism, web, chemistry]
 date: 2024-03-15
+c_gallery:
+  - src: /assets/images/chem5.png
+  - src: /assets/images/chem4.png
+s_gallery:
+  - src: /assets/images/chem6.png
+  - src: /assets/images/chem7.png
+m_gallery:
+  - src: /assets/images/chem2.png
+  - src: /assets/images/chem3.png
 ---
 
 ## TL;DR
@@ -43,6 +52,8 @@ Unity was used to create **accurate, photorealistic models** of laboratory glass
 
 This visual fidelity is essential for correctly teaching **meniscus reading**, a skill that depends on subtle optical cues.
 
+{% include gallery.html images=page.c_gallery %}
+
 ---
 
 ### 2) Meniscus reading training
@@ -53,6 +64,8 @@ The simulator guides students through:
 
 Students can repeat the process multiple times, reinforcing correct technique through visual repetition rather than trial-and-error in a real lab.
 
+{% include gallery.html images=page.m_gallery %}
+
 ---
 
 ### 3) Integrated lab procedures
@@ -62,6 +75,8 @@ Beyond meniscus reading, the simulator integrates full procedural workflows, inc
 - step-by-step experimental processes
 
 This allows students to understand how individual techniques fit into broader lab experiments.
+
+{% include gallery.html images=page.s_gallery %}
 
 ---
 
@@ -91,15 +106,6 @@ Responsibilities included:
 - photorealistic 3D environment creation
 - interaction design and procedural flow
 - web deployment and optimization for student use
-
----
-
-## Future Work
-Potential extensions include:
-- additional chemistry lab modules
-- assessment and feedback systems
-- instructor dashboards for tracking student progress
-- expanded instrument simulations
 
 ---
 
