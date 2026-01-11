@@ -99,23 +99,10 @@ This dual-deployment approach increases adoption and lowers barriers for instruc
 
 ---
 
-## Results
-- Successfully delivered a **high-fidelity, interactive nuclear reactor simulator**
-- Enabled real-time exploration of reactor dynamics with accurate physical behavior
-- Supported both instructional and research use cases
-
-The simulator was:
-- demonstrated and discussed with domain experts
-- adopted as a training and visualization tool in academic contexts
-
----
-
 ## Dissemination & Collaboration
 This work was presented at:
 - **NESTet**
 - **ANS CONTE**
-
-Presentations supported knowledge transfer, validation by subject-matter experts, and broader adoption of the simulator in professional training environments.
 
 ---
 
@@ -130,5 +117,6 @@ Presentations supported knowledge transfer, validation by subject-matter experts
 **Unity Programmer & Research Assistant**  
 Responsible for:
 - real-time simulation integration
+- UI/UX design
 - Unity implementation and deployment
 - collaboration with nuclear engineering researchers

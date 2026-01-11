@@ -15,7 +15,12 @@ s_gallery:
 m_gallery:
   - src: /assets/images/chem2.png
   - src: /assets/images/chem3.png
+t_gallery:
+  - src: /assets/images/chem.png
+    span: full
 ---
+
+{% include gallery.html images=page.t_gallery %}
 
 ## TL;DR
 A **web-based, photorealistic chemistry lab simulator** built in Unity to teach essential laboratory techniques—most notably **accurate meniscus reading**—successfully used by **500+ students** for remote and supplemental lab training.
