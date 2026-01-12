@@ -132,9 +132,4 @@ Possible extensions include:
 - Particle advection / streamlines for flow tracing
 - Comparative visualization across different seasons or years
 
----
 
-## Credits
-- **Xinyi Zhou**
-- **Michelle He**  
-CS 530 — Final Project

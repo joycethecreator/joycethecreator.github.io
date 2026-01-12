@@ -9,7 +9,7 @@ date: 2025-03-06
 ---
 
 ## TL;DR
-I built a GPU-oriented XPBD soft-body pipeline that uses **voxels as the simulation primitive**. This makes constraint scheduling more regular and enables **LoD long-range constraints** for stiffness and faster convergence.
+A GPU-oriented XPBD soft-body pipeline that uses **voxels as the simulation primitive**. This makes constraint scheduling more regular and enables **LoD long-range constraints** for stiffness and faster convergence.
 
 <div class="columns is-variable is-5">
   <div class="column">
@@ -49,10 +49,6 @@ Design a pipeline that is:
 
 ## Methodology
 
-### Overview (Baseline vs Proposed)
-![Methodology overview](/assets/images/projects/voxel-xpbd/methodology.png)
-
----
 
 ### Baseline pipeline (comparison): tetrahedralization -> XPBD constraints
 
@@ -69,7 +65,6 @@ Design a pipeline that is:
 **Step 4: XPBD solve**
 - Iterate partitions per substep.
 
-![Tetra pipeline](/assets/images/projects/voxel-xpbd/tetra-pipeline.png)
 
 ---
 
@@ -86,8 +81,6 @@ Design a pipeline that is:
 **Step 3: deterministic partitioning**
 - Grid structure makes scheduling more stable than irregular tetra graphs.
 
-![Voxel pipeline](/assets/images/projects/voxel-xpbd/voxel-pipeline.png)
-
 ---
 
 ### Voxel constraint primitive (the core idea)
@@ -99,8 +92,6 @@ A single voxel constraint aggregates multiple sub-constraints:
 
 This increases arithmetic intensity (more math per memory fetch) and maps well to GPU workgroups.
 
-![Voxel constraint](/assets/images/projects/voxel-xpbd/voxel-constraint.png)
-
 ---
 
 ### LoD long-range constraints
@@ -109,8 +100,6 @@ Local constraints alone converge slowly for global stiffness. Voxels support mul
 LoD helps by:
 - adding longer-range constraints for stiffness
 - reducing the number of iterations required for global effects
-
-![Strided LoD](/assets/images/projects/voxel-xpbd/lod.png)
 
 ---
 
@@ -121,7 +110,6 @@ Show side-by-side captures or short clips:
 - without LoD: droops/collapses more
 - with LoD: holds shape better
 
-![Results](/assets/images/projects/voxel-xpbd/results.png)
 
 ### Performance evaluation
 Key metrics to report (use your slides/tables):
@@ -129,7 +117,6 @@ Key metrics to report (use your slides/tables):
 - partition count / number of phases
 - cost breakdown: voxelization vs solve
 
-![Performance evaluation](/assets/images/projects/voxel-xpbd/perf.png)
 
 ---
 

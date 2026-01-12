@@ -45,7 +45,6 @@ Realistic fluid motion is difficult because the system involves:
 - **Eulerian:** sample velocity/pressure on a grid.
 - **Lagrangian (SPH):** follow moving particles and compute fields from them.
 
-This project uses **Lagrangian SPH**. :contentReference[oaicite:1]{index=1}
 
 ---
 
@@ -54,8 +53,6 @@ Each particle contributes to nearby particles through a **kernel function**. The
 - density estimation
 - gradients (pressure direction)
 - Laplacians (viscosity diffusion)
-
-(Your slides mention the kernel and its default gradient/laplacian roles.) :contentReference[oaicite:2]{index=2}
 
 ---
 
@@ -69,20 +66,19 @@ Why this matters:
 - density drives pressure
 - pressure drives incompressibility-like behavior
 
-(Your slides emphasize mass-density depending on particle mass and neighborhood.) :contentReference[oaicite:3]{index=3}
 
 #### B) Pressure computation
-Use a state relation (often inspired by ideal gas law forms) to convert density error into pressure. :contentReference[oaicite:4]{index=4}
+Use a state relation (often inspired by ideal gas law forms) to convert density error into pressure. 
 
 #### C) Internal forces
 Compute forces from neighbors:
 
 - **Pressure force:** pushes particles from high pressure to low pressure  
-- **Viscosity force:** resists relative motion, smoothing velocity differences :contentReference[oaicite:5]{index=5}
+- **Viscosity force:** resists relative motion, smoothing velocity differences 
 
 #### D) External forces
 - Gravity (baseline external acceleration)
-- (Optional extensions: buoyancy, surface tension) :contentReference[oaicite:6]{index=6}
+- (Optional extensions: buoyancy, surface tension) 
 
 #### E) Integrate
 Update velocity and position using the net force.
@@ -95,7 +91,7 @@ The simulator resolves particle-obstacle interaction using:
 - penetration depth
 - surface normal at contact point
 
-This prevents particles from tunneling through obstacles and produces believable boundary behavior. :contentReference[oaicite:7]{index=7}
+This prevents particles from tunneling through obstacles and produces believable boundary behavior. 
 
 ---
 
@@ -123,7 +119,7 @@ SPH is very sensitive to physical parameters. The most important ones you can ex
 - smoothing radius (kernel radius)
 - time step
 
-(Your slides include a “Physical Parameters” section.) :contentReference[oaicite:9]{index=9}
+
 
 ---
 
@@ -140,14 +136,9 @@ Other common practical issues:
 ## Future work
 Concrete extensions that make this feel like a real graphics portfolio project:
 
-- **Obstacle variety:** sphere, terrain, complex colliders :contentReference[oaicite:11]{index=11}  
+- **Obstacle variety:** sphere, terrain, complex colliders  
 - **Free surface rendering:** smoother surface extraction/meshing for visuals
-- **Erosion / interaction:** fluid affecting terrain over time :contentReference[oaicite:12]{index=12}  
+- **Erosion / interaction:** fluid affecting terrain over time  
 - **Acceleration:** spatial hashing / uniform grid neighbor search
 - **GPU path:** compute shader implementation for higher particle counts
 
----
-
-## References
-- R.A. Gingold and J.J. Monaghan (1977), *Smoothed particle hydrodynamics: theory and application...* :contentReference[oaicite:13]{index=13}  
-- Demo reference used in the project: kelager.06.pdf :contentReference[oaicite:14]{index=14}
